@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SectionPages from "../widget/SectionPages";
+import MyProject from "../widget/MyProject";
 
 const LandingPage: React.FC = () => {
    const [isOpen, setIsOpen] =  useState(false);
@@ -79,7 +80,8 @@ const LandingPage: React.FC = () => {
         {/* Image Section */}
         <div className="md:w-5/12 flex justify-center md:justify-end mb-8 md:mb-0">
         <img
-            src="/src/assets/phone.png"
+            src ="https://cdn.creazilla.com/cliparts/35685/business-man-mobile-phone-clipart-xl.png"
+            // src="/src/assets/phone.png"
             alt="Phone"
             className="w-56 sm:w-72 md:w-96 rounded-2xl shadow-2xl hover:shadow-purple-400/60 transform transition duration-500 hover:scale-105 animate-float"
         />
@@ -91,6 +93,11 @@ const LandingPage: React.FC = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <SectionPages />
       </div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <MyProject />
+      </div>
+      <br />
 
       {/* Footer View */}
       <footer className="bg-gray-900 text-white py-8">
